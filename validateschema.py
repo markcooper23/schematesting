@@ -13,6 +13,9 @@ def validate_json(file_path, schema_path):
 
     for error in errors:
         print(error.message)
+    
+    if len(errors) == 0:
+        print(f'No errors found in file {file_path}')
 
 validate_json("json-test-1.json", "schema.json")
 validate_json("json-test-2.json", "schema.json")
