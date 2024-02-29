@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft/2020-12/schema",    
+    "type": "object",
+    "description": "Description of schema purpose",
+    "required": ["test-value-1", "test-value-2", "test-value-3"],
+    "properties": {
+        "test-value-1": {
+            "type": "string",
+            "additiona-prop-1": true,
+            "description": "Description of value 1",
+            "pattern": "^[a-zA-Z0-9]+$",
+            "errorMessage": {
+                "pattern": "Value 1 can only contain letters or numbers"
+            }        
+        },
+
+        "test-value-2": {
+            "type": "boolean",
+            "description": "Description of value 2"
+        },
+
+        "test-value-3": {
+            "type": "array",
+            "description": "Description of value 3"   
+        },
+
+        "test-value-4": {
+            "type": "string",
+            "description": "Description of value 3",
+            "enum": [
+                "option1",
+                "option2",
+                "option3"
+            ]      
+        }        
+
+    },
+
+    "$def": {
+        "additiona-prop-1": {
+            "type": "boolean",
+            "description": "Extending the schema with an additional property"
+        }
+    },
+    "additionalProperties": false
+
+
+}

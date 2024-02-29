@@ -1,0 +1,9 @@
+{
+    "test-value-1": "value123",
+    "test-value-2": true,
+    "test-value-3": [
+        "list1",
+        "list2" 
+    ],
+    "test-value-4": "option1"
+}
