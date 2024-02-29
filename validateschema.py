@@ -12,9 +12,9 @@ def validate_json(file_path, schema_path):
     errors = validator.iter_errors(data)
 
     for error in errors:
-        print(f"File: {file_path} Error: {error.message})
+        print(f"File: {file_path} Error: {error.message}")
     
-    if len(errors) == 0:
+    if errors == None:
         print(f'No errors found in file {file_path}')
 
 validate_json("json-test-1.json", "schema.json")
